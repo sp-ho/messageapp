@@ -30,8 +30,8 @@ pipeline {
             steps {
                 withCredentials([file(credentialsId: 'gcp-service-account-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     bat '''
-                        gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_CREDENTIALS
-                        gcloud config set project $GCP_PROJECT
+                        gcloud auth activate-service-account --key-file=%GOOGLE_APPLICATION_CREDENTIALS%
+                        gcloud config set project %GCP_PROJECT%
                         gcloud app deploy app.yaml --quiet
                     '''
                 }
