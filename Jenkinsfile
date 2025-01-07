@@ -1,6 +1,7 @@
 pipeline {
     agent any
 
+    // gcp project id
     environment {
         GCP_PROJECT = 'employee1-447012'
     }
@@ -8,6 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
+                // github url
                 git 'https://github.com/sp-ho/employee_management1.git'
             }
         }

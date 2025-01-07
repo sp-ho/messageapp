@@ -19,7 +19,7 @@ public class MessageController {
         return messageService.getAllMessages();
     }
 
-    @PostMapping("/createMessage")
+    @PostMapping("/saveMessage")
     public Message createMessage(@RequestBody Message message) {
         return messageService.saveMessage(message);
     }
