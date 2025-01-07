@@ -16,20 +16,20 @@ pipeline {
 
         stage('Build Application') {
             steps {
-                sh './mvnw clean package'
+                bat './mvnw clean package'
             }
         }
 
         stage('Test Application') {
             steps {
-                sh './mvnw test'
+                bat './mvnw test'
             }
         }
 
         stage('Deploy to App Engine') {
             steps {
                 withCredentials([file(credentialsId: 'gcp-service-account-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
-                    sh '''
+                    bat '''
                         gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_CREDENTIALS
                         gcloud config set project $GCP_PROJECT
                         gcloud app deploy app.yaml --quiet
