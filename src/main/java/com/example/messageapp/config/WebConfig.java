@@ -1,4 +1,4 @@
-package com.example.employee1.config;
+package com.example.messageapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

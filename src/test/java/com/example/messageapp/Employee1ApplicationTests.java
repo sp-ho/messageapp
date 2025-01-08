@@ -1,4 +1,4 @@
-package com.example.employee1;
+package com.example.messageapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

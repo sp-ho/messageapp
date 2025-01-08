@@ -1,4 +1,4 @@
-package com.example.employee1;
+package com.example.messageapp;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

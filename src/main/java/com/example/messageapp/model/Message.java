@@ -1,4 +1,4 @@
-package com.example.employee1;
+package com.example.messageapp.model;
 
 import jakarta.persistence.*;
 
