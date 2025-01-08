@@ -5,7 +5,7 @@ env_variables:
   SPRING_PROFILES_ACTIVE: cloud
 
 beta_settings:
-  cloud_sql_instances: employee1-447012:us-east1:sqldb
+  cloud_sql_instances: <GCP_PROJECT_ID>:<REGION>:<GCP_SQL_INSTANCE>
 
 readiness_check:
   path: "/_ah/health"
