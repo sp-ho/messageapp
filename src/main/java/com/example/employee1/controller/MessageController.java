@@ -1,6 +1,6 @@
 package com.example.employee1.controller;
 
-import com.example.employee1.model.Message;
+import com.example.employee1.Message;
 import com.example.employee1.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
