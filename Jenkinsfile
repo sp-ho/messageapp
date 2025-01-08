@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // github url
-                git 'https://github.com/sp-ho/employee_management1.git'
+                git 'https://github.com/sp-ho/employee1.git'
             }
         }
 
@@ -28,7 +28,7 @@ pipeline {
 
         stage('Deploy to App Engine') {
             steps {
-                withCredentials([file(credentialsId: 'gcp-service-account-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
+                withCredentials([file(credentialsId: 'sa-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     bat '''
                         gcloud auth activate-service-account --key-file=%GOOGLE_APPLICATION_CREDENTIALS%
                         gcloud config set project %GCP_PROJECT%
