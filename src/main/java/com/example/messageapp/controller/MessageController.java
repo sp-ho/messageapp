@@ -29,7 +29,7 @@ public class MessageController {
         return messageService.updateMessage(id, message);
     }
 
-    @DeleteMapping("deleteMessage/{id}")
+    @DeleteMapping("/deleteMessage/{id}")
     public void deleteMessage(@PathVariable Long id){
         messageService.deleteMessage(id);
     }
