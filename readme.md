@@ -98,8 +98,8 @@ gcloud app deploy
 ```
 
 Access the API at:
-- Base URL: https://<your-project-id>.appspot.com
-- Example Endpoint: https://<your-project-id>.appspot.com/messageService/getAllMessages
+- Base URL: https://your-project-id.appspot.com
+- Example Endpoint: https://your-project-id.appspot.com/messageService/getAllMessages
 
 **API Endpoints**
 
